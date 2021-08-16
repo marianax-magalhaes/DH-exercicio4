@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+/************************ GENERAL *************************/
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+/************************ HEADER *************************/
+header{
+    text-transform: uppercase;
+    color:#777777;
+}
+header .header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0 10px;
+    box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
+}
+header .header-container .main-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+/************************ BANNER *************************/
+section.banner img{
+    width: 100%;
+    margin: 50px 0;   
+}
+
+/************************ STYLE *************************/
+section.style .style-container{
+    padding: 0 20px;
+}
+section.style .style-container .style-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+section.style .style-container .style-imgs img{
+    max-width: 100%;
+}
+
+/************************ SALE *************************/
+section.sale{
+    background-color: #C2185B;
+    margin: 50px 0;
+    padding: 50px 20px 100px 20px;
+}
+section.sale h2{
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+section.sale .sale-thumbs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+section.sale .sale-thumbs .thumb{
+    background-color: #FFFFFF;
+    width: 260px;
+    max-width: 100%;
+}
+section.sale .sale-thumbs .thumb .info{
+    padding: 10px;
+}
+section.sale .sale-thumbs .thumb .info h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+section.sale .sale-thumbs .thumb .info p{
+    font-weight: 300;
+    margin-top:0;
+}
+
+/************************ DETAILS *************************/
+section.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-end;
+    gap: 20px;
+
+    padding: 50px 20px 100px 20px;
+}
+section.details img{
+    max-width: 100%;
+}
+section.details .details-left .details-left-txt{
+    padding-bottom: 30px;
+}
+section.details .details-left .details-left-txt h2{
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+section.details .details-left .details-left-txt button{
+    background-color: #C2185B;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    border: none;
+}
+
+/************************ FOOTER *************************/
+footer{
+    background-color: #C2185B;
+    color: #FFFFFF;
+}
+footer .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+
+    padding: 50px 20px;
+}
+footer .footer-container .footer-left p{
+    margin-top: -25px;
+    width: 300px;
+    max-width: 100%;
+}
+footer .footer-container .footer-right{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+footer .footer-container .footer-right h3{
+    margin: 0;
+    font-weight: 600;
+}
+footer .footer-container .footer-right ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+footer .footer-container .footer-right ul li a{
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+/************************ TEAM-UP PG *************************/
+section.team-up{
+    margin: 50px;
+} 
+section.team-up h1{
+    color: #9B9B9B;
+    font-weight: 600;
+}
+section.team-up .team-up-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+} 
+section.team-up .team-up-container form{
+    padding: 10px;
+    color:#9B9B9B;
+}
+section.team-up .team-up-container form div{
+    margin: 15px;
+}
+section.team-up .team-up-container form .block input{
+    padding: 5px 0;
+    width: 100%;
+}
+section.team-up .team-up-container form .boxes label{
+    margin-right: 8px;
+}
+section.team-up .team-up-container form textarea{
+    width: 100%;
+    resize:none;
+    padding: 30px 0;
+}
+section.team-up .team-up-container form .submit input{
+    padding: 10px;
+    border: 0;
+    margin-top: 15px;
+    background-color:#C2185B;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.1rem;
+    width: 100%;
+}
+section.team-up .team-up-description{
+    width: 50vw;
+    max-width: 100%;
+    color: #575757;
+    font-weight: 400;
+}
+
+/************************ MEDIA *************************/
+@media (max-width: 638px) {
+    header .header-container .main-menu ul{
+        gap: 20px;
+    }
+}
+@media (max-width:420px){
+    footer .footer-container .footer-right{
+        text-align: center;
+    }
+}
+@media (max-width: 394px) {
+    header .header-container .main-menu ul{
+        padding: 13px 12px;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+} 
+@media (max-width: 320px){
+    footer .footer-container .footer-right {
+        gap: 50px;
+    }
+
+}
